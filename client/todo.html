@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A Simple App</title>
+
+    <link href="stylesheets/todo.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>To Do List</h1>
+      <p>A simple app that allows a user to input to do list items</p>
+    </header>
+
+    <main>
+      <section class="comment-input">
+        <p style="margin-top: 15px;">
+          Add Your Todo: <br />
+          <input type="text" /> <button>+</button>
+        </p>
+        <p style="margin-top:10px;">
+          Retrieve Todo:
+          <input type="text" placeholder="Enter comment" id="getOne" />
+          <button style="font-size:18px;">&rarr;</button>
+        </p>
+        <p style="margin-top:15px;">
+          Delete Todo:
+          <input type="text" placeholder="Enter comment" id="deleteOne" />
+          <button>-</button>
+        </p>
+        <p style="margin-top:15px;">
+          Delete ALL Todos:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button>*</button>
+        </p>
+      </section>
+
+      <section class="comments"><p>List of Todos</p></section>
+
+      <div id="outDiv" style="margin-top: 10px; border-top: thin solid;"></div>
+    </main>
+
+    <footer><p>this work is released into the public domain</p></footer>
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="javascripts/todo.js"></script>
+  </body>
+</html>
